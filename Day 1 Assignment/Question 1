@@ -1,1 +1,13 @@
-
+Class abc{
+Public static woid main()
+{
+int i = 0;
+i=i+1;
+Systems.out.println (i);
+}
+}
+ERRORS ARE:
+-->Class should not begin with captital c.
+-->It's Void and not woid.
+-->Public keyword should begin with lowercase .
+-->It's System not Systems.
