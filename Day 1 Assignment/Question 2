@@ -1,0 +1,12 @@
+Class abc{
+Public static void main()
+{
+Short i=2500, j=3000;
+System.out.println(”i+j”, i+I);
+} }
+
+ERROES ARE:
+-->Class should not begin with captital c.
+-->Data type is int and not short.
+-->Public keyword should begin with lowercase .
+-->At SOP + sign is missing and I is undeclared.
