@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+public static void main(String args[]) {
+Scanner s = new Scanner(System.in);
+System.out.print("Enter value of n=");
+int n = s.nextInt();
+int c, i, k, j;
+for (i = 0; i <= n; i++) {
+    for (k = 1; k < n - i; k++) {
+    System.out.print(" ");
+    }
+    c = 1;
+    for (j = 0; j <= i; j++) {
+    if (i == 0 || j == 0)
+    c = 1;
+    else {
+    c = c * (i - j + 1) / j;
+    }
+    System.out.print(" " + c);
+}
+    System.out.println();
+        }
+    }
+}
