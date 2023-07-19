@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+class Biggest
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+System.out.println("The first number: ");
+int a=s.nextInt();
+System.out.println("The second number: ");
+int b=s.nextInt();
+System.out.println("The third number: ");
+int c=s.nextInt();
+if(a>b&& b<a)
+System.out.println("The largest  number is : "+(a));
+else if(b>a && b>c)
+System.out.println("The largest  number is : "+(b));
+else if(c>a && b<c)
+System.out.println("The largest  number is : "+(c));
+}
+}
