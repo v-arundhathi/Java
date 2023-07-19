@@ -1,0 +1,12 @@
+ (a) System.out.println(“x=”+x);
+-->no mistake.
+b. 	m= 5;// n=10’//s= m
+--> If m is declared then no mistake.
+c. cin>>x;>>y;
+--> Not a statement of Java
+d. System.out.println (\n “Name”, name);
+-->the + is missing.
+e. System.out.println(”enter the value”, +x);
+-->no mistakes
+f.  /* addition */ z=x+y;
+-->no mistake ,If the used varaibles are already declared.
