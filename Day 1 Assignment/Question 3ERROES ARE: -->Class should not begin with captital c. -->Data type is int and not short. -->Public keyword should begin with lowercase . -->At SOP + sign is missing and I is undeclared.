@@ -1,0 +1,17 @@
+Class abc{
+Public static void main()
+{
+int f=1.0, j=5; 
+int inadResult=0;
+int divresult=0;
+int modResult-i%jj;
+System.out.print\n (modresult);
+}
+
+FOLLOWING ERRORS WILL BE GENERATED :
+-->Class should not begin with captital c.
+-->Public keyword should begin with lowercase .
+-->f is of int datatype not float.
+-->no operator between j and j operands.
+-->printn\ is invalid.
+-->modresult is undeclared.
