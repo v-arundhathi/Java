@@ -1,0 +1,57 @@
+import java.io.*;
+import java.util.*;
+class report
+{
+		void mark(){
+			
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the Regno: ");
+int reg=s.nextInt();
+System.out.println("Enter the Name: ");
+String name=s.next();
+System.out.println("Enter subject 1 mark: ");
+double m1=s.nextDouble();
+System.out.println("Enter subject 2 mark: ");
+double m2=s.nextDouble();
+System.out.println("Enter subject 3 mark: ");
+double m3=s.nextDouble();
+System.out.println("Enter subject 4 mark: ");
+double m4=s.nextDouble();
+System.out.println("Enter subject 5 mark: ");
+double m5=s.nextDouble();
+double total,avg;
+if(m1<50||m2<50||m3<50||m4<50||m5<50)
+{
+System.out.println("Average cannot be calculated ");
+}
+else{
+total=m1+m2+m3+m4+m5;
+avg=total/5;
+System.out.println("Total is "+total);
+System.out.println("Average is "+avg);
+
+if(total>=450 && total<=500)
+System.out.println("S Grade");
+else if(total<450 && total>=400)
+System.out.println("A Grade");
+else if(total<400 && total>=350)
+System.out.println("B Grade");
+else if(total<350 && total>=250)
+System.out.println("C Grade");
+else
+System.out.println("D Grade");
+
+}
+}
+}	
+	class StudentGradeoops
+	{
+		public static void main(String args[])
+		{
+			report c= new report();
+			c. mark();
+
+		}
+	}
+	
+ 
