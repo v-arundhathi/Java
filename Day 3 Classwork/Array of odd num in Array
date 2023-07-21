@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+class Arraysumofodd
+{
+public static void main(String args[])
+{
+Scanner s= new Scanner(System.in);
+int n=5;
+
+int a[]=new int[n];
+int i,sum1=0,sum2=0;
+System.out.println("Enter elements of the array:");
+for(i=0;i<n;i++){
+a[i]=s.nextInt();
+}
+for(i=0;i<n;i++){
+if(a[i]%2==0)
+ sum1+=a[i];
+else
+ sum2+=a[i];
+}
+
+
+System.out.println("sum of the even elements array:"+(sum1));
+System.out.println("sum of the odd elements of  array:"+(sum2));
+
+
+}
+}
