@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+class Palindromme
+{
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter String: ");
+		String str=s.next();
+		String reverse="";
+		int length=str.length();
+		int i=0;
+		for(i=length-1;i>=0;i--)
+			{
+				  reverse=reverse+str.charAt(i);
+			}
+			if(str.equals(reverse))
+				System.out.println("Palindrome");
+			else
+				System.out.println("not palindrome");
+		
+	}
+}
