@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+class Evensum
+{
+public static void main(String args[])
+{
+Scanner s= new Scanner(System.in);
+System.out.println("Enter n =");
+int n=s.nextInt();
+int i=0,sum=0;
+while(i<=n)
+{
+if(i%2==0)
+{
+	sum+=i;
+}
+i++;
+}
+System.out.println("sum ="+sum);
+}
+}
+
