@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+class Calc
+{
+		void arith(){
+
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter first number: ");
+	int a=s.nextInt();
+	System.out.println("Enter second number: ");
+	int b=s.nextInt();
+
+	System.out.println("Sum of numbers: "+(a+b));
+	System.out.println("Difference of numbers: "+(a-b));
+	System.out.println("Product of numbers: "+(a*b));
+	System.out.println("Division of numbers: "+(a/b));
+	}
+	}
+	class Arithmetricop
+	{
+		public static void main(String args[])
+		{
+			Calc c= new Calc();
+			c. arith();
+
+		}
+	}
+	
