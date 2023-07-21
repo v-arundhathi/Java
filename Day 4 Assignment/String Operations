@@ -1,0 +1,50 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class StringOperations {
+    public static void main(String[] args) {
+        String sampleString = "The quick brown fox jumps over the lazy dog.";
+
+        String str1 = "hello";
+        String str2 = "HeLLo";
+        System.out.println("Task i: Strings comparison (ignoring case): " + str1.equalsIgnoreCase(str2));
+
+        String endsWith = "dog.";
+        System.out.println("Task ii: Sample string ends with 'dog.': " + sampleString.endsWith(endsWith));
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String formattedDate = dateFormat.format(new Date());
+        System.out.println("Task iii: Current date and time: " + formattedDate);
+
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        for (char c : alphabet.toCharArray()) {
+            int index = sampleString.indexOf(c);
+            if (index != -1) {
+                System.out.println("Task iv: Index of '" + c + "': " + index);
+            }
+        }
+
+        String replacedString = sampleString.replaceAll("fox", "cat");
+        System.out.println("Task v: Replaced string: " + replacedString);
+
+        int startPosition = 4;
+        int endPosition = 9;
+        String subString = sampleString.substring(startPosition, endPosition);
+        System.out.println("Task vi: Substring from position " + startPosition + " to " + endPosition + ": " + subString);
+
+        String stringWithSpaces = "    leading and trailing spaces    ";
+        String trimmedString = stringWithSpaces.trim();
+        System.out.println("Task vii: Trimmed string: \"" + trimmedString + "\"");
+
+        String lowercaseString = sampleString.toLowerCase();
+        System.out.println("Task viii: Lowercase string: " + lowercaseString);
+
+        int stringLength = sampleString.length();
+        System.out.println("Task ix: Length of the sample string: " + stringLength);
+
+        String anotherSampleString = "The quick brown fox jumps over the lazy dog.";
+        System.out.println("Task x: Strings contain the same data: " + sampleString.equals(anotherSampleString));
+    }
+}
