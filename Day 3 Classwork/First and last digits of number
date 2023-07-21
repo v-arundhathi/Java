@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+class Fldigit
+{
+public static void main(String args[])
+{
+Scanner s= new Scanner(System.in);
+System.out.println("Enter n =");
+int n=s.nextInt();
+int i=0,sum=0,rem;
+rem=n%10;
+int temp=rem;
+rem=0;
+while(n!=0)
+{
+rem=n%10;
+sum=sum*10+rem;
+n=n/10;
+}
+int m=sum%10;
+System.out.println("Lastdigit ="+temp);
+System.out.println("First digit ="+m);
+
+}
+}
+
+
