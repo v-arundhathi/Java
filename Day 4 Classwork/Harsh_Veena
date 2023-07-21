@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+class Harsha_Venna
+{
+	int biriyani=10;
+	void no_of_legpiece()
+	{
+		System.out.println(biriyani);
+	}
+	void muttonbiriyani()
+	{
+		System.out.println("I ate biriyani ");
+	}
+}
+class Lunch
+{
+	public static void main(String args[])
+	{
+		Harsha_Venna H= new Harsha_Venna();
+		H.no_of_legpiece();
+		H.muttonbiriyani();
+
+	}
+}
